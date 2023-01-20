@@ -9,8 +9,8 @@ from dash.dependencies import Input, Output
 import plotly.express as px
 
 import pandas as pd
-url = 'gapminderDataFiveYear.csv'
-df = pd.read_csv(url)
+urls = 'gapminderDataFiveYear.csv'
+df = pd.read_csv(urls)
 
 dash_app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
 app = dash_app.server
